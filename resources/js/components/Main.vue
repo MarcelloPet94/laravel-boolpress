@@ -12,9 +12,11 @@
                     <li v-for="(tag, index) in article.tags" :key="index" class="tags_pin">{{'#' + tag.name }}</li>
                 </ul>
 
-            </div>    
+            </div>   
+            <a href="#">Vedi articolo</a> 
         </div>              
     </div>
+    <router-view></router-view>
 </div>
 </template>
 
