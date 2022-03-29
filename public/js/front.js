@@ -3487,7 +3487,7 @@ var render = function () {
           : _vm._e(),
         _vm._v(" "),
         _c("div", { staticClass: "media_cont" }, [
-          _c("img", { attrs: { src: "storage/" + article.image } }),
+          _c("img", { attrs: { src: "/storage/" + article.image } }),
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "argument_cont" }, [
@@ -3583,7 +3583,7 @@ var render = function () {
           : _vm._e(),
         _vm._v(" "),
         _c("div", { staticClass: "media_cont" }, [
-          _c("img", { attrs: { src: "storage/" + _vm.singleArt.image } }),
+          _c("img", { attrs: { src: "/storage/" + _vm.singleArt.image } }),
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "argument_cont" }, [

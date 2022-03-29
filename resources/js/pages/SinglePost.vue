@@ -7,10 +7,10 @@
             <ul v-if="singleArt.tags.length">
                 <li v-for="(tag, index) in singleArt.tags" :key="index" class="tags_pin">{{'#' + tag.name }}</li>
             </ul>            
-            <div class="media_cont"><img :src="'storage/' + singleArt.image"></div>
+            <div class="media_cont"><img :src="'/storage/' + singleArt.image"></div>
             <div class="argument_cont">
                 <p>{{singleArt.content}}</p>
-            </div>   
+            </div>  
         </div>              
     </div>
 </div>
@@ -32,7 +32,7 @@ export default{
         .then((response)=> {
          this.singleArt = response.data;
         })
-    }    
+    }
 }
 
 </script>

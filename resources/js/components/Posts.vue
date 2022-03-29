@@ -5,7 +5,7 @@
         <ul v-if="article.tags.length">
             <li v-for="(tag, index) in article.tags" :key="index" class="tags_pin">{{'#' + tag.name }}</li>
         </ul>        
-        <div class="media_cont"><img :src="'storage/' + article.image"></div>
+        <div class="media_cont"><img :src="'/storage/' + article.image"></div>
         <div class="argument_cont">
             <p>{{article.content}}</p>
             <p v-if="article.category">{{article.category.name}}</p>
