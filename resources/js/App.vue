@@ -2,19 +2,36 @@
   <div>
       <Header />
       <Main />
-      <Footer />
   </div>
 </template>
 
 <script>
+
+import Header from './components/Header.vue';
 import Main from './components/Main.vue';
+
 export default {
   name: "App",
   components: {
-    Main,
+    Header,
+    Main
   }
 }
 </script>
 
-<style>
+<style lang="scss">
+@import "../sass/_variables.scss";
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font-family-sans-serif;
+}
+
+body
+{
+  background-color: $bg;
+}
+
 </style>
